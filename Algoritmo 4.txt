@@ -1,0 +1,21 @@
+Algoritmo algoritmo4
+	Dimension muestra[20]
+	Definir edadMayor Como Entero
+	Definir edadMenor Como Entero
+	edadMayor <- 0
+	edadMenor <- 122
+	Para i<-1 Hasta 20 Hacer
+		muestra[i] <- azar(122)+1
+		Escribir muestra[i],' ' Sin Saltar
+	FinPara
+	Para i<-1 Hasta 20 Hacer
+		Si muestra[i]>edadMayor Entonces
+			edadMayor <- muestra[i]
+		FinSi
+		Si muestra[i]<edadMenor Entonces
+			edadMenor <- muestra[i]
+		FinSi
+	FinPara
+	Escribir 'La persona más grande tiene ',edadMayor,' años'
+	Escribir 'La persona más joven tiene ',edadMenor,' años'
+FinAlgoritmo
